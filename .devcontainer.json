@@ -1,0 +1,45 @@
+{
+    "image": "prbservicesllc/aws-node:latest",
+    "forwardPorts": [
+        3000, 4200, 8080
+    ],
+    "workspaceFolder": "/workspace",
+    "mounts": [
+        "source=${env:USERPROFILE}/.aws,target=/root/.aws,type=bind,consistency=consistent",
+        "source=${env:USERPROFILE}/.ssh,target=/root/.ssh,type=bind,consistency=consistent",
+        "source=${env:USERPROFILE}/.bashrc,target=/root/.bashrc,type=bind,consistency=consistent",
+        "source=${env:USERPROFILE}/.bash_profile,target=/root/.bash_profile,type=bind,consistency=consistent",
+        "source=${env:USERPROFILE}/.bash_aliases,target=/root/.bash_aliases,type=bind,consistency=consistent",
+        "source=${env:USERPROFILE}/.cache,target=/root/.cache,type=bind,consistency=consistent",
+        "source=${env:APPDATA}/Microsoft/UserSecrets,target=/root/.microsoft/usersecrets,type=bind,consistency=consistent",
+        "source=${env:USERPROFILE}/vscode.gitconfig,target=/root/.gitconfig,type=bind,consistency=consistent",
+        "source=//var/run/docker.sock,target=/var/run/docker.sock,type=bind,consistency=consistent",
+    ],
+    "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind,consistency=consistent",
+    "runArgs": [
+        "--rm",
+        "--network=host"
+    ],
+    "containerEnv": {
+        "AWS_PROFILE": "PRB-Tools-East1",
+    },
+    "extensions": [
+        "adrianwilczynski.user-secrets",
+        "nrwl.angular-console",
+        "esbenp.prettier-vscode",
+        "ms-kubernetes-tools.vscode-kubernetes-tools",
+        "ms-azuretools.vscode-docker",
+        "amazonwebservices.aws-toolkit-vscode",
+        "mark-tucker.aws-cli-configure",
+        "christian-kohler.npm-intellisense",
+        "dbaeumer.vscode-eslint",
+        "ms-vscode.powershell-preview",
+        "foxundermoon.shell-format",
+        "formulahendry.docker-explorer",
+        "mindaro.mindaro",
+        "oderwat.indent-rainbow",
+        "2gua.rainbow-brackets",
+        "redhat.vscode-yaml",
+        "arcanis.vscode-zipfs"
+    ]
+}
