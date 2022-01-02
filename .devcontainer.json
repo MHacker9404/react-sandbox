@@ -25,6 +25,7 @@
     },
     "extensions": [
         "adrianwilczynski.user-secrets",
+        "ecmel.vscode-html-css",
         "nrwl.angular-console",
         "esbenp.prettier-vscode",
         "ms-kubernetes-tools.vscode-kubernetes-tools",
@@ -40,6 +41,7 @@
         "oderwat.indent-rainbow",
         "2gua.rainbow-brackets",
         "redhat.vscode-yaml",
+        "redhat.vscode-xml",
         "arcanis.vscode-zipfs"
     ]
 }
