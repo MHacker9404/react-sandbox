@@ -1,0 +1,28 @@
+{
+    "root": "apps/rcg-ts-e2e",
+    "sourceRoot": "apps/rcg-ts-e2e/src",
+    "projectType": "application",
+    "targets": {
+        "e2e": {
+            "executor": "@nrwl/cypress:cypress",
+            "options": {
+                "cypressConfig": "apps/rcg-ts-e2e/cypress.json",
+                "devServerTarget": "rcg-ts:serve"
+            },
+            "configurations": {
+                "production": {
+                    "devServerTarget": "rcg-ts:serve:production"
+                }
+            }
+        },
+        "lint": {
+            "executor": "@nrwl/linter:eslint",
+            "outputs": ["{options.outputFile}"],
+            "options": {
+                "lintFilePatterns": ["apps/rcg-ts-e2e/**/*.{js,ts}"]
+            }
+        }
+    },
+    "tags": [],
+    "implicitDependencies": ["rcg-ts"]
+}

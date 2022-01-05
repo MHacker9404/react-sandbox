@@ -1,0 +1,23 @@
+{
+    "root": "libs/todoslib",
+    "sourceRoot": "libs/todoslib/src",
+    "projectType": "library",
+    "tags": [],
+    "targets": {
+        "lint": {
+            "executor": "@nrwl/linter:eslint",
+            "outputs": ["{options.outputFile}"],
+            "options": {
+                "lintFilePatterns": ["libs/todoslib/**/*.{ts,tsx,js,jsx}"]
+            }
+        },
+        "test": {
+            "executor": "@nrwl/jest:jest",
+            "outputs": ["coverage/libs/todoslib"],
+            "options": {
+                "jestConfig": "libs/todoslib/jest.config.js",
+                "passWithNoTests": true
+            }
+        }
+    }
+}
