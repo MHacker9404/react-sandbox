@@ -1,15 +1,16 @@
 import './todos.module.scss';
-import { Todo } from '../models/todo';
+import { TodoModel } from '../models/TodoModel';
+import TodoItem from './TodoItem';
 
 export interface TodosProps {
-    items: Todo[];
+    items: TodoModel[];
 }
 
 export const Todos: React.FC<TodosProps> = (props) => {
     return (
         <ul>
             {props.items.map((item) => (
-                <li key={item.id}>{item.text}</li>
+                <TodoItem key={item.id} text={item.text} />
             ))}
         </ul>
     );

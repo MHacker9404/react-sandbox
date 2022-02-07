@@ -1,7 +1,7 @@
 import styles from './app.module.scss';
-import { Todos, Todo } from '@react-sandbox/todoslib';
+import { Todos, TodoModel } from '@react-sandbox/todoslib';
 
-const items: Todo[] = [
+const items: TodoModel[] = [
     { id: Math.random.toString(), text: 'Learn React' },
     { id: Math.random.toString(), text: 'Learn Typescript' },
 ];
