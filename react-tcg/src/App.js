@@ -30,7 +30,6 @@ import NewExpense from './components/NewExpense/NewExpense';
 const App = () => {
     const [items, setItems] = useState(expenses);
     const addExpenseHandler = (expense) => {
-        console.info(expense);
         setItems((prevState) => {
             return [...prevState, expense];
          });

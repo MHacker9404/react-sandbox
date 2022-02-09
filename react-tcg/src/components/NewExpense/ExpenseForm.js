@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { utcToZonedTime } from 'date-fns-tz';
 import './ExpenseForm.css';
 
 const ExpenseForm = (props) => {
@@ -28,7 +29,6 @@ const ExpenseForm = (props) => {
 
     const dateChangedHandler = (event) => {
         //  setDate(event.target.value);
-        console.log(event.target.value);
         setInput((prevState) => {
             return {
                 ...prevState,
@@ -42,7 +42,7 @@ const ExpenseForm = (props) => {
         setInput((prevState) => {
             return {
                 ...prevState,
-                amount: event.target.value,
+                amount: +event.target.value,
             };
         });
     };
@@ -52,7 +52,7 @@ const ExpenseForm = (props) => {
 
         const eventData = {
             ...input,
-            date: new Date(input.date),
+            date: utcToZonedTime(input.date, 'America/New_York')
         };
         // console.log(eventData);
         props.onSaveExpenseData(eventData);
@@ -98,6 +98,9 @@ const ExpenseForm = (props) => {
                 </div>
             </div>
             <div className="new-expense__actions">
+                <button type="button" onClick={props.onCancel}>
+                    Cancel
+                </button>
                 <button type="submit">Add Expense</button>
             </div>
         </form>
