@@ -1,10 +1,29 @@
 {
-	"folders": [
-		{
-			"path": "."
-		}
+    "folders": [
+        {
+            "path": "."
+        }
     ],
     "settings": {
         "git.ignoreLimitWarning": true
+    },
+    "tasks": {
+        "version": "2.0.0",
+        "tasks": [
+            {
+                "label": "echo",
+                "type": "shell",
+                "command": "echo Hello"
+            },
+            {
+            "label": "bridge-to-kubernetes.service",
+            "type": "bridge-to-kubernetes.service",
+            "service": "bikes",
+            "ports": [
+                8080
+            ],
+            "useKubernetesServiceEnvironmentVariables": true
+        }
+        ]
     }
 }

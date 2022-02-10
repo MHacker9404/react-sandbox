@@ -1,8 +1,0 @@
-{
-    "version": 2,
-    "projects": {
-        "rcg-ts": "apps/rcg-ts",
-        "rcg-ts-e2e": "apps/rcg-ts-e2e",
-        "todoslib": "libs/todoslib"
-    }
-}

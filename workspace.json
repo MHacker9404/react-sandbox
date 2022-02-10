@@ -1,0 +1,9 @@
+{
+    "version": 2,
+    "projects": {
+        "rcg-ts": "apps/rcg-ts",
+        "rcg-ts-e2e": "apps/rcg-ts-e2e",
+        "react-tcg-06": "apps/react-tcg-06",
+        "todoslib": "libs/todoslib"
+    }
+}
