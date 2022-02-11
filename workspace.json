@@ -1,10 +1,7 @@
 {
     "version": 2,
     "projects": {
-        "rcg-ts": "apps/rcg-ts",
-        "rcg-ts-e2e": "apps/rcg-ts-e2e",
-        "react-tcg-06": "apps/react-tcg-06",
-        "react-tcg-07": "apps/react-tcg-07",
+        "react-tcg-08": "apps/react-tcg-08",
         "todoslib": "libs/todoslib"
     }
 }
