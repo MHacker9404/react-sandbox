@@ -18,7 +18,6 @@
             {
             "label": "bridge-to-kubernetes.service",
             "type": "bridge-to-kubernetes.service",
-            "service": "bikes",
             "ports": [
                 8080
             ],

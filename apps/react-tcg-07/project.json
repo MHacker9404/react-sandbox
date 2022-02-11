@@ -16,10 +16,10 @@
                 "polyfills": "apps/react-tcg-07/src/polyfills.js",
                 "tsConfig": "apps/react-tcg-07/tsconfig.app.json",
                 "assets": [
-                    "apps/react-tcg-07/src/favicon.ico",
+                    "apps/react-tcg-07/src/public/favicon.ico",
                     "apps/react-tcg-07/src/assets"
                 ],
-                "styles": ["apps/react-tcg-07/src/styles.scss"],
+                "styles": ["apps/react-tcg-07/src/styles.css"],
                 "scripts": [],
                 "webpackConfig": "@nrwl/react/plugins/webpack"
             },
