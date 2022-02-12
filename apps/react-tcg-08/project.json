@@ -17,6 +17,8 @@
                 "tsConfig": "apps/react-tcg-08/tsconfig.app.json",
                 "assets": [
                     "apps/react-tcg-08/src/public/favicon.ico",
+                    "apps/react-tcg-08/src/public/manifest.json",
+                    "apps/react-tcg-08/src/public/logo192.png",
                     "apps/react-tcg-08/src/assets"
                 ],
                 "styles": ["apps/react-tcg-08/src/styles.scss"],
