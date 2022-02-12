@@ -1,7 +1,7 @@
 {
     "version": 2,
     "projects": {
-        "react-tcg-08": "apps/react-tcg-08",
+        "react-tcg-09": "apps/react-tcg-09",
         "todoslib": "libs/todoslib"
     }
 }
