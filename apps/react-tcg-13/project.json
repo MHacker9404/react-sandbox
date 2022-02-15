@@ -1,6 +1,6 @@
 {
-    "root": "apps/react-tcg-10",
-    "sourceRoot": "apps/react-tcg-10/src",
+    "root": "apps/react-tcg-13",
+    "sourceRoot": "apps/react-tcg-13/src",
     "projectType": "application",
     "targets": {
         "build": {
@@ -9,19 +9,19 @@
             "defaultConfiguration": "production",
             "options": {
                 "compiler": "babel",
-                "outputPath": "dist/apps/react-tcg-10",
-                "index": "apps/react-tcg-10/src/public/index.html",
+                "outputPath": "dist/apps/react-tcg-13",
+                "index": "apps/react-tcg-13/src/public/index.html",
                 "baseHref": "/",
-                "main": "apps/react-tcg-10/src/main.js",
-                "polyfills": "apps/react-tcg-10/src/polyfills.js",
-                "tsConfig": "apps/react-tcg-10/tsconfig.app.json",
+                "main": "apps/react-tcg-13/src/main.js",
+                "polyfills": "apps/react-tcg-13/src/polyfills.js",
+                "tsConfig": "apps/react-tcg-13/tsconfig.app.json",
                 "assets": [
-                    "apps/react-tcg-10/src/public/favicon.ico",
-                    "apps/react-tcg-10/src/public/manifest.json",
-                    "apps/react-tcg-10/src/public/logo192.png",
-                    "apps/react-tcg-10/src/assets"
+                    "apps/react-tcg-13/src/public/favicon.ico",
+                    "apps/react-tcg-13/src/public/manifest.json",
+                    "apps/react-tcg-13/src/public/logo192.png",
+                    "apps/react-tcg-13/src/assets"
                 ],
-                "styles": ["apps/react-tcg-10/src/styles.scss"],
+                "styles": ["apps/react-tcg-13/src/styles.scss"],
                 "scripts": [],
                 "webpackConfig": "@nrwl/react/plugins/webpack"
             },
@@ -29,8 +29,8 @@
                 "production": {
                     "fileReplacements": [
                         {
-                            "replace": "apps/react-tcg-10/src/environments/environment.js",
-                            "with": "apps/react-tcg-10/src/environments/environment.prod.js"
+                            "replace": "apps/react-tcg-13/src/environments/environment.js",
+                            "with": "apps/react-tcg-13/src/environments/environment.prod.js"
                         }
                     ],
                     "optimization": true,
@@ -45,12 +45,12 @@
         "serve": {
             "executor": "@nrwl/web:dev-server",
             "options": {
-                "buildTarget": "react-tcg-10:build",
+                "buildTarget": "react-tcg-13:build",
                 "hmr": true
             },
             "configurations": {
                 "production": {
-                    "buildTarget": "react-tcg-10:build:production",
+                    "buildTarget": "react-tcg-13:build:production",
                     "hmr": false
                 }
             }
@@ -59,7 +59,7 @@
             "executor": "@nrwl/linter:eslint",
             "outputs": ["{options.outputFile}"],
             "options": {
-                "lintFilePatterns": ["apps/react-tcg-10/**/*.{ts,tsx,js,jsx}"]
+                "lintFilePatterns": ["apps/react-tcg-13/**/*.{ts,tsx,js,jsx}"]
             }
         }
     },
